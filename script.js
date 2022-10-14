@@ -30,8 +30,6 @@ const validateEmail = (input) => {
     return input.value
 }
 const validatePassword = (input) => {
-    //const regEx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{6,}$/
-
     if(input.value.length < 6){  
         return '!'
     }
