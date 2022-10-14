@@ -13,16 +13,14 @@ const validateFirstName = (input) => {
     if(!regEx.test(input.value)){     
         return '!'
     }
-    return input.value
-    
+    return input.value    
 }
 const validateLastName = (input) => {
     const regEx = /[^0-9]{2,}$/
     if(!regEx.test(input.value)){
         return '!'
     }
-    return input.value
-    
+    return input.value 
 }
 const validateEmail = (input) => {
     const regEx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
@@ -40,9 +38,7 @@ const validatePassword = (input) => {
     return input.value
 }
 const validateRepeatPassword = (input) => {
-    
     if(!(input.value == document.querySelector('#password').value)){
-    
     return '!'
     }
     return input.value
@@ -53,7 +49,6 @@ const validateCheckbox = (input) => {
     }
     return input.value
 }
-
 const validateAll = function(e) {
     e.preventDefault()
     const inputs = []
